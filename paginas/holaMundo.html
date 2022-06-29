@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+</head>
+<body>
+
+    <div id="container"></div>
+    <script src="http://fb.me/react-0.13.3.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.13.3.js"></script>
+
+    <script type="text/jsx">
+        var HelloWorld = React.createClass({
+            render: function() {
+                return <h1> Holaa { this.props.name } </h1>
+            }
+        });
+
+        React.render(
+            <HelloWorld name="Roberth" />,
+            document.getElementById('container')
+        );
+    </script>
+</body>
+</html>
